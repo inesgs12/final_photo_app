@@ -22,11 +22,11 @@ function renderPhotos(photoArray) {
 }
 
 function renderPhoto(photo) {
-    
+    // debugger
     let individualDiv = document.createElement("div")
     individualDiv.className = "container"
     // let individualDiv = document.createElement("div")
-    // individualDiv.id = `photoDiv-${photo.id}`
+    individualDiv.id = `photoDiv-${photo.id}`
     let photoUrlTag = document.createElement("a")
     // photoUrlTag.className = "align-middle"
     let imageThumbnail = document.createElement("img")
@@ -65,9 +65,6 @@ function renderPhoto(photo) {
 
     createForm(individualDiv, photo)
 
-    //displayComments(photo.comments)
-
-
 }
 
 function createLike(photo, likesButton) {
@@ -84,7 +81,6 @@ function createLike(photo, likesButton) {
         },
         body: JSON.stringify({
             like_count: photo.like_count, 
-            // id: photo.id  
         })
     })
 }
@@ -94,17 +90,17 @@ function createForm(individualDiv, photo) {
     photoCommentsForm = document.createElement("form")
     photoCommentsForm.id = "photo-form";
     photoCommentsForm.className = "container"
-    // photoCommentsForm.id = `form-${individualDiv.id}`;
+    photoCommentsForm.id = `form-${individualDiv.id}`;
     photoCommentsForm.addEventListener("submit", () => addFormListener(event, individualDiv, photo))
 
     inputCommentContent = document.createElement("input");
-    // inputCommentContent.id = `content-${individualDiv.id}`
+    inputCommentContent.id = `content-${individualDiv.id}`
     inputCommentContent.placeholder = "add your comment here..."
     inputCommentContent.className = "rounded mx-auto d-block my-1"
 
     formButton = document.createElement("button")
     formButton.id = "form-button"
-    // formButton.id = `submit-${individualDiv.id}`
+    formButton.id = `submit-${individualDiv.id}`
     formButton.innerText = "Submit"
     formButton.className = "rounded mx-auto d-block mb-5"
 
