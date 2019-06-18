@@ -2,18 +2,18 @@ document.addEventListener("DOMContentLoaded", init)
 
 const photosUrl = "http://localhost:3000/photos"
 
-const photosContainer = document.querySelector(".row no-gutters")
+const photosContainer = document.querySelector("#photo-container")
 
 function fetchPhotos() {
-    return fetch(photosUrl, { mode: 'no-cors' })
+    return fetch(photosUrl)
         .then(response => response.json())
         .then(photoArray => renderPhotos(photoArray))
 }
 
 function renderPhotos(photoArray) {
-    photosContainer.innerHTML = ""
+    // photosContainer.innerHTML = ""
     photoArray.forEach(photo => {
-        renderPhotos(photo)
+        renderPhoto(photo)
     })
 }
 
@@ -27,8 +27,7 @@ function renderPhoto(photo) {
     
     let imageThumbnail = document.createElement("img")
     imageThumbnail.className = "img-fluid"
-    imageThumbnail.src = `${photo.url}`
-    imageThumbnail.alt = `${photo.thumbnail}`
+    imageThumbnail.src = `${photo.thumbnail}`
 
     let captionDivBox = document.createElement("div")
     captionDivBox.className = "portfolio-box-caption"
