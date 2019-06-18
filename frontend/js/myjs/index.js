@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", init)
 
-const photosUrl = "http://localhost:3000/photos"
+const photosUrl = "http://localhost:3000/photos/"
 
 const photosContainer = document.querySelector("#photo-container")
 
