@@ -66,8 +66,8 @@ const commentForm=document.createElementById()
 // }
 
 // function displayComments(photoId) {
-
-// } 
+   
+//  } 
 
 // function likePhoto(photo) {
 //     PATCH Method ... 
