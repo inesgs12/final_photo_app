@@ -17,7 +17,7 @@ def seed_data
 
     all_photos.each do |photo|
         one_photo = Photo.find_or_create_by(
-            url:photo["urls"]["full"],
+            url:photo["urls"]["small"],
             width:photo["width"],
             height:photo["height"],
             like_count: 0,
