@@ -10414,3 +10414,1101 @@ Processing by PhotosController#update as JSON
 Completed 200 OK in 8ms (Views: 1.5ms | ActiveRecord: 2.3ms)
 
 
+  [1m[36mPhoto Load (2.9ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPhoto Load (15.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[36mPhoto Load (2.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPhoto Destroy (3.6ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPhoto Destroy (3.9ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mPhoto Load (0.9ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPhoto Load (1.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mComment Destroy (1.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mComment Destroy (0.5ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (1.4ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560859581-d51f66c66233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 2992], ["height", 3992], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560859581-d51f66c66233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (1.2ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560859581-d51f66c66233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 3992], ["width", 2992], ["thumbnail", "https://images.unsplash.com/photo-1560859581-d51f66c66233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:14:27.546876"], ["updated_at", "2019-06-18 15:14:27.546876"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560775664-5010c750aeed?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 3158], ["height", 4733], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560775664-5010c750aeed?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560775664-5010c750aeed?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 4733], ["width", 3158], ["thumbnail", "https://images.unsplash.com/photo-1560775664-5010c750aeed?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:14:27.551624"], ["updated_at", "2019-06-18 15:14:27.551624"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560836059-3277890e663b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4000], ["height", 6000], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560836059-3277890e663b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560836059-3277890e663b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 6000], ["width", 4000], ["thumbnail", "https://images.unsplash.com/photo-1560836059-3277890e663b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:14:27.570654"], ["updated_at", "2019-06-18 15:14:27.570654"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560854786-8c2a4f642f96?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 3744], ["height", 5616], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560854786-8c2a4f642f96?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560854786-8c2a4f642f96?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 5616], ["width", 3744], ["thumbnail", "https://images.unsplash.com/photo-1560854786-8c2a4f642f96?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:14:27.574403"], ["updated_at", "2019-06-18 15:14:27.574403"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560851240-099afcad338b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4709], ["height", 3139], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560851240-099afcad338b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560851240-099afcad338b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 3139], ["width", 4709], ["thumbnail", "https://images.unsplash.com/photo-1560851240-099afcad338b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:14:27.576862"], ["updated_at", "2019-06-18 15:14:27.576862"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560785901-e26f1d800c0e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4836], ["height", 6508], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560785901-e26f1d800c0e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560785901-e26f1d800c0e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 6508], ["width", 4836], ["thumbnail", "https://images.unsplash.com/photo-1560785901-e26f1d800c0e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:14:27.579432"], ["updated_at", "2019-06-18 15:14:27.579432"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560773766-0bd79c039083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 3072], ["height", 4608], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560773766-0bd79c039083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560773766-0bd79c039083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 4608], ["width", 3072], ["thumbnail", "https://images.unsplash.com/photo-1560773766-0bd79c039083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:14:27.582437"], ["updated_at", "2019-06-18 15:14:27.582437"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560742246-5de4e0bd7770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 2193], ["height", 2925], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560742246-5de4e0bd7770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.2ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560742246-5de4e0bd7770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 2925], ["width", 2193], ["thumbnail", "https://images.unsplash.com/photo-1560742246-5de4e0bd7770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:14:27.584599"], ["updated_at", "2019-06-18 15:14:27.584599"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560296270-aef93a171c7b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4254], ["height", 5775], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560296270-aef93a171c7b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.2ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560296270-aef93a171c7b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 5775], ["width", 4254], ["thumbnail", "https://images.unsplash.com/photo-1560296270-aef93a171c7b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:14:27.586634"], ["updated_at", "2019-06-18 15:14:27.586634"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560296742-763872d541f2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4509], ["height", 6334], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560296742-763872d541f2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.2ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560296742-763872d541f2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 6334], ["width", 4509], ["thumbnail", "https://images.unsplash.com/photo-1560296742-763872d541f2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:14:27.588875"], ["updated_at", "2019-06-18 15:14:27.588875"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Young Hodkiewicz"], ["created_at", "2019-06-18 15:14:27.811502"], ["updated_at", "2019-06-18 15:14:27.811502"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Kristina Brekke"], ["created_at", "2019-06-18 15:14:27.816291"], ["updated_at", "2019-06-18 15:14:27.816291"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Alec Nolan"], ["created_at", "2019-06-18 15:14:27.819714"], ["updated_at", "2019-06-18 15:14:27.819714"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Miss Cruz Brekke"], ["created_at", "2019-06-18 15:14:27.823076"], ["updated_at", "2019-06-18 15:14:27.823076"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Grover Feest"], ["created_at", "2019-06-18 15:14:27.826047"], ["updated_at", "2019-06-18 15:14:27.826047"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Eugena Bayer I"], ["created_at", "2019-06-18 15:14:27.829019"], ["updated_at", "2019-06-18 15:14:27.829019"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Mr. Theo Schaefer"], ["created_at", "2019-06-18 15:14:27.831894"], ["updated_at", "2019-06-18 15:14:27.831894"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Charline Bernier II"], ["created_at", "2019-06-18 15:14:27.834502"], ["updated_at", "2019-06-18 15:14:27.834502"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Miss Heriberto Lubowitz"], ["created_at", "2019-06-18 15:14:27.836425"], ["updated_at", "2019-06-18 15:14:27.836425"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Krista Emmerich"], ["created_at", "2019-06-18 15:14:27.838254"], ["updated_at", "2019-06-18 15:14:27.838254"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 49], ["user_id", 4], ["created_at", "2019-06-18 15:14:27.848647"], ["updated_at", "2019-06-18 15:14:27.848647"], ["content", "Provident illo ut."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 29], ["user_id", 1], ["created_at", "2019-06-18 15:14:27.853163"], ["updated_at", "2019-06-18 15:14:27.853163"], ["content", "Id rerum optio."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 53], ["user_id", 20], ["created_at", "2019-06-18 15:14:27.857366"], ["updated_at", "2019-06-18 15:14:27.857366"], ["content", "Accusantium laborum quidem."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 44], ["user_id", 2], ["created_at", "2019-06-18 15:14:27.861552"], ["updated_at", "2019-06-18 15:14:27.861552"], ["content", "Sit aut quidem."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 23], ["user_id", 13], ["created_at", "2019-06-18 15:14:27.865616"], ["updated_at", "2019-06-18 15:14:27.865616"], ["content", "Ut laborum aperiam."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 37], ["user_id", 3], ["created_at", "2019-06-18 15:14:27.878762"], ["updated_at", "2019-06-18 15:14:27.878762"], ["content", "Hic fugiat voluptatem."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 13], ["user_id", 3], ["created_at", "2019-06-18 15:14:27.883411"], ["updated_at", "2019-06-18 15:14:27.883411"], ["content", "Qui veniam nulla."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 1], ["user_id", 9], ["created_at", "2019-06-18 15:14:27.887726"], ["updated_at", "2019-06-18 15:14:27.887726"], ["content", "Earum alias illo."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 51], ["user_id", 1], ["created_at", "2019-06-18 15:14:27.892513"], ["updated_at", "2019-06-18 15:14:27.892513"], ["content", "Incidunt a voluptate."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 25], ["user_id", 16], ["created_at", "2019-06-18 15:14:27.896695"], ["updated_at", "2019-06-18 15:14:27.896695"], ["content", "Nobis rerum est."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.9ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY "photos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."photo_id" = ? LIMIT ?[0m  [["photo_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (3.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (1.9ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 12]]
+  [1m[36mComment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 19]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPhoto Load (2.3ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPhoto Load (2.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[35m (1.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPhoto Destroy (12.4ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPhoto Destroy (4.8ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateComments (20190618082151)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190618082151_create_comments.rb:3
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "photo_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_8e6de2dbfc"
+FOREIGN KEY ("photo_id")
+  REFERENCES "photos" ("id")
+, CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190618082151_create_comments.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_photo_id" ON "comments" ("photo_id")[0m
+  ↳ db/migrate/20190618082151_create_comments.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  ↳ db/migrate/20190618082151_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190618082151"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190618082727)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "photos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "like_count" integer, "height" integer, "width" integer, "thumbnail" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190618082727_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190618082727"]]
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190618082742)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190618082742_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190618082742"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddContentToComments (20190618082856)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "comments" ADD "content" varchar[0m
+  ↳ db/migrate/20190618082856_add_content_to_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190618082856"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-18 15:22:43.978312"], ["updated_at", "2019-06-18 15:22:43.978312"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560859581-d51f66c66233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 2992], ["height", 3992], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560859581-d51f66c66233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.5ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560859581-d51f66c66233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 3992], ["width", 2992], ["thumbnail", "https://images.unsplash.com/photo-1560859581-d51f66c66233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:22:49.233085"], ["updated_at", "2019-06-18 15:22:49.233085"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560775664-5010c750aeed?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 3158], ["height", 4733], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560775664-5010c750aeed?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560775664-5010c750aeed?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 4733], ["width", 3158], ["thumbnail", "https://images.unsplash.com/photo-1560775664-5010c750aeed?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:22:49.236818"], ["updated_at", "2019-06-18 15:22:49.236818"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560836059-3277890e663b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4000], ["height", 6000], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560836059-3277890e663b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560836059-3277890e663b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 6000], ["width", 4000], ["thumbnail", "https://images.unsplash.com/photo-1560836059-3277890e663b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:22:49.239350"], ["updated_at", "2019-06-18 15:22:49.239350"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560854786-8c2a4f642f96?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 3744], ["height", 5616], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560854786-8c2a4f642f96?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560854786-8c2a4f642f96?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 5616], ["width", 3744], ["thumbnail", "https://images.unsplash.com/photo-1560854786-8c2a4f642f96?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:22:49.241704"], ["updated_at", "2019-06-18 15:22:49.241704"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560851240-099afcad338b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4709], ["height", 3139], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560851240-099afcad338b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560851240-099afcad338b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 3139], ["width", 4709], ["thumbnail", "https://images.unsplash.com/photo-1560851240-099afcad338b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:22:49.244343"], ["updated_at", "2019-06-18 15:22:49.244343"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560785901-e26f1d800c0e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4836], ["height", 6508], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560785901-e26f1d800c0e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560785901-e26f1d800c0e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 6508], ["width", 4836], ["thumbnail", "https://images.unsplash.com/photo-1560785901-e26f1d800c0e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:22:49.247111"], ["updated_at", "2019-06-18 15:22:49.247111"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560773766-0bd79c039083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 3072], ["height", 4608], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560773766-0bd79c039083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560773766-0bd79c039083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 4608], ["width", 3072], ["thumbnail", "https://images.unsplash.com/photo-1560773766-0bd79c039083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:22:49.249627"], ["updated_at", "2019-06-18 15:22:49.249627"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560742246-5de4e0bd7770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 2193], ["height", 2925], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560742246-5de4e0bd7770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.4ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560742246-5de4e0bd7770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 2925], ["width", 2193], ["thumbnail", "https://images.unsplash.com/photo-1560742246-5de4e0bd7770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:22:49.252818"], ["updated_at", "2019-06-18 15:22:49.252818"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560296270-aef93a171c7b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4254], ["height", 5775], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560296270-aef93a171c7b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560296270-aef93a171c7b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 5775], ["width", 4254], ["thumbnail", "https://images.unsplash.com/photo-1560296270-aef93a171c7b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:22:49.255814"], ["updated_at", "2019-06-18 15:22:49.255814"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560296742-763872d541f2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4509], ["height", 6334], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560296742-763872d541f2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560296742-763872d541f2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 6334], ["width", 4509], ["thumbnail", "https://images.unsplash.com/photo-1560296742-763872d541f2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:22:49.258280"], ["updated_at", "2019-06-18 15:22:49.258280"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Suk Sporer"], ["created_at", "2019-06-18 15:22:49.647514"], ["updated_at", "2019-06-18 15:22:49.647514"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Gema Simonis"], ["created_at", "2019-06-18 15:22:49.650319"], ["updated_at", "2019-06-18 15:22:49.650319"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Shanti Bogisich V"], ["created_at", "2019-06-18 15:22:49.652283"], ["updated_at", "2019-06-18 15:22:49.652283"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Miss Quinton McClure"], ["created_at", "2019-06-18 15:22:49.654329"], ["updated_at", "2019-06-18 15:22:49.654329"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Illa Hettinger"], ["created_at", "2019-06-18 15:22:49.656402"], ["updated_at", "2019-06-18 15:22:49.656402"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Ed Boyer"], ["created_at", "2019-06-18 15:22:49.658771"], ["updated_at", "2019-06-18 15:22:49.658771"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Toby Cruickshank I"], ["created_at", "2019-06-18 15:22:49.661112"], ["updated_at", "2019-06-18 15:22:49.661112"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Dortha VonRueden MD"], ["created_at", "2019-06-18 15:22:49.663519"], ["updated_at", "2019-06-18 15:22:49.663519"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Mafalda Hamill"], ["created_at", "2019-06-18 15:22:49.666242"], ["updated_at", "2019-06-18 15:22:49.666242"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Claris Trantow"], ["created_at", "2019-06-18 15:22:49.668192"], ["updated_at", "2019-06-18 15:22:49.668192"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 4], ["user_id", 10], ["created_at", "2019-06-18 15:22:49.717508"], ["updated_at", "2019-06-18 15:22:49.717508"], ["content", "Vel consectetur exercitationem."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 5], ["user_id", 3], ["created_at", "2019-06-18 15:22:49.722083"], ["updated_at", "2019-06-18 15:22:49.722083"], ["content", "Et aut nesciunt."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 1], ["user_id", 5], ["created_at", "2019-06-18 15:22:49.725955"], ["updated_at", "2019-06-18 15:22:49.725955"], ["content", "Aliquid id quia."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 9], ["user_id", 4], ["created_at", "2019-06-18 15:22:49.731511"], ["updated_at", "2019-06-18 15:22:49.731511"], ["content", "Voluptatem doloremque enim."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 9], ["user_id", 4], ["created_at", "2019-06-18 15:22:49.735464"], ["updated_at", "2019-06-18 15:22:49.735464"], ["content", "Quia sed architecto."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 5], ["user_id", 2], ["created_at", "2019-06-18 15:22:49.739464"], ["updated_at", "2019-06-18 15:22:49.739464"], ["content", "Ab quis reprehenderit."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 7], ["user_id", 9], ["created_at", "2019-06-18 15:22:49.743202"], ["updated_at", "2019-06-18 15:22:49.743202"], ["content", "Perferendis saepe voluptas."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 4], ["user_id", 5], ["created_at", "2019-06-18 15:22:49.747363"], ["updated_at", "2019-06-18 15:22:49.747363"], ["content", "Aut ut est."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 3], ["user_id", 1], ["created_at", "2019-06-18 15:22:49.751209"], ["updated_at", "2019-06-18 15:22:49.751209"], ["content", "Laborum optio et."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 10], ["user_id", 6], ["created_at", "2019-06-18 15:22:49.755938"], ["updated_at", "2019-06-18 15:22:49.755938"], ["content", "Doloribus enim odio."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (1.6ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateComments (20190618082151)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "photo_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_8e6de2dbfc"
+FOREIGN KEY ("photo_id")
+  REFERENCES "photos" ("id")
+, CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190618082151_create_comments.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_photo_id" ON "comments" ("photo_id")[0m
+  ↳ db/migrate/20190618082151_create_comments.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  ↳ db/migrate/20190618082151_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190618082151"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190618082727)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "photos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "like_count" integer, "height" integer, "width" integer, "thumbnail" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190618082727_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190618082727"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190618082742)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190618082742_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190618082742"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddContentToComments (20190618082856)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "comments" ADD "content" varchar[0m
+  ↳ db/migrate/20190618082856_add_content_to_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190618082856"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-18 15:31:08.442962"], ["updated_at", "2019-06-18 15:31:08.442962"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560859581-d51f66c66233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 2992], ["height", 3992], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560859581-d51f66c66233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.7ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560859581-d51f66c66233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 3992], ["width", 2992], ["thumbnail", "https://images.unsplash.com/photo-1560859581-d51f66c66233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:31:22.099742"], ["updated_at", "2019-06-18 15:31:22.099742"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560775664-5010c750aeed?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 3158], ["height", 4733], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560775664-5010c750aeed?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.2ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560775664-5010c750aeed?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 4733], ["width", 3158], ["thumbnail", "https://images.unsplash.com/photo-1560775664-5010c750aeed?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:31:22.103002"], ["updated_at", "2019-06-18 15:31:22.103002"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560836059-3277890e663b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4000], ["height", 6000], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560836059-3277890e663b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560836059-3277890e663b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 6000], ["width", 4000], ["thumbnail", "https://images.unsplash.com/photo-1560836059-3277890e663b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:31:22.105227"], ["updated_at", "2019-06-18 15:31:22.105227"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560854786-8c2a4f642f96?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 3744], ["height", 5616], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560854786-8c2a4f642f96?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.6ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560854786-8c2a4f642f96?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 5616], ["width", 3744], ["thumbnail", "https://images.unsplash.com/photo-1560854786-8c2a4f642f96?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:31:22.129059"], ["updated_at", "2019-06-18 15:31:22.129059"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560851240-099afcad338b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4709], ["height", 3139], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560851240-099afcad338b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.5ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560851240-099afcad338b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 3139], ["width", 4709], ["thumbnail", "https://images.unsplash.com/photo-1560851240-099afcad338b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:31:22.135177"], ["updated_at", "2019-06-18 15:31:22.135177"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560785901-e26f1d800c0e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4836], ["height", 6508], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560785901-e26f1d800c0e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560785901-e26f1d800c0e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 6508], ["width", 4836], ["thumbnail", "https://images.unsplash.com/photo-1560785901-e26f1d800c0e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:31:22.143651"], ["updated_at", "2019-06-18 15:31:22.143651"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560773766-0bd79c039083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 3072], ["height", 4608], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560773766-0bd79c039083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.7ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560773766-0bd79c039083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 4608], ["width", 3072], ["thumbnail", "https://images.unsplash.com/photo-1560773766-0bd79c039083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:31:22.147268"], ["updated_at", "2019-06-18 15:31:22.147268"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560742246-5de4e0bd7770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 2193], ["height", 2925], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560742246-5de4e0bd7770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560742246-5de4e0bd7770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 2925], ["width", 2193], ["thumbnail", "https://images.unsplash.com/photo-1560742246-5de4e0bd7770?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:31:22.151133"], ["updated_at", "2019-06-18 15:31:22.151133"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560296270-aef93a171c7b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4254], ["height", 5775], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560296270-aef93a171c7b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.4ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560296270-aef93a171c7b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 5775], ["width", 4254], ["thumbnail", "https://images.unsplash.com/photo-1560296270-aef93a171c7b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:31:22.153962"], ["updated_at", "2019-06-18 15:31:22.153962"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."url" = ? AND "photos"."width" = ? AND "photos"."height" = ? AND "photos"."like_count" = ? AND "photos"."thumbnail" = ? LIMIT ?[0m  [["url", "https://images.unsplash.com/photo-1560296742-763872d541f2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["width", 4509], ["height", 6334], ["like_count", 0], ["thumbnail", "https://images.unsplash.com/photo-1560296742-763872d541f2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("url", "like_count", "height", "width", "thumbnail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["url", "https://images.unsplash.com/photo-1560296742-763872d541f2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["like_count", 0], ["height", 6334], ["width", 4509], ["thumbnail", "https://images.unsplash.com/photo-1560296742-763872d541f2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjc3MTU0fQ"], ["created_at", "2019-06-18 15:31:22.157899"], ["updated_at", "2019-06-18 15:31:22.157899"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (8.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Dr. Blake Torphy"], ["created_at", "2019-06-18 15:31:22.751836"], ["updated_at", "2019-06-18 15:31:22.751836"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Elza Orn"], ["created_at", "2019-06-18 15:31:22.763798"], ["updated_at", "2019-06-18 15:31:22.763798"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Ms. Palma Nader"], ["created_at", "2019-06-18 15:31:22.766483"], ["updated_at", "2019-06-18 15:31:22.766483"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Marinda Krajcik"], ["created_at", "2019-06-18 15:31:22.768657"], ["updated_at", "2019-06-18 15:31:22.768657"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Vina Jenkins IV"], ["created_at", "2019-06-18 15:31:22.771022"], ["updated_at", "2019-06-18 15:31:22.771022"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Abram Bradtke"], ["created_at", "2019-06-18 15:31:22.774853"], ["updated_at", "2019-06-18 15:31:22.774853"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Lenita Goldner MD"], ["created_at", "2019-06-18 15:31:22.777400"], ["updated_at", "2019-06-18 15:31:22.777400"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Liberty Klocko"], ["created_at", "2019-06-18 15:31:22.779807"], ["updated_at", "2019-06-18 15:31:22.779807"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Adan Murphy"], ["created_at", "2019-06-18 15:31:22.782812"], ["updated_at", "2019-06-18 15:31:22.782812"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Foster Harber"], ["created_at", "2019-06-18 15:31:22.785207"], ["updated_at", "2019-06-18 15:31:22.785207"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 9], ["user_id", 9], ["created_at", "2019-06-18 15:31:22.848965"], ["updated_at", "2019-06-18 15:31:22.848965"], ["content", "Corrupti minus vel."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 8], ["user_id", 8], ["created_at", "2019-06-18 15:31:22.854513"], ["updated_at", "2019-06-18 15:31:22.854513"], ["content", "Accusamus dolores at."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 1], ["user_id", 10], ["created_at", "2019-06-18 15:31:22.872193"], ["updated_at", "2019-06-18 15:31:22.872193"], ["content", "Ullam soluta voluptatem."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 5], ["user_id", 9], ["created_at", "2019-06-18 15:31:22.880574"], ["updated_at", "2019-06-18 15:31:22.880574"], ["content", "Occaecati natus deleniti."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 3], ["user_id", 5], ["created_at", "2019-06-18 15:31:22.885836"], ["updated_at", "2019-06-18 15:31:22.885836"], ["content", "Quo quo consectetur."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 5], ["user_id", 2], ["created_at", "2019-06-18 15:31:22.890391"], ["updated_at", "2019-06-18 15:31:22.890391"], ["content", "Est asperiores labore."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 5], ["user_id", 7], ["created_at", "2019-06-18 15:31:22.894779"], ["updated_at", "2019-06-18 15:31:22.894779"], ["content", "Et magnam culpa."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 1], ["user_id", 1], ["created_at", "2019-06-18 15:31:22.898867"], ["updated_at", "2019-06-18 15:31:22.898867"], ["content", "Aut illo est."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 2], ["user_id", 2], ["created_at", "2019-06-18 15:31:22.903228"], ["updated_at", "2019-06-18 15:31:22.903228"], ["content", "Atque accusamus vel."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "created_at", "updated_at", "content") VALUES (?, ?, ?, ?, ?)[0m  [["photo_id", 4], ["user_id", 2], ["created_at", "2019-06-18 15:31:22.907391"], ["updated_at", "2019-06-18 15:31:22.907391"], ["content", "Sint excepturi velit."]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
