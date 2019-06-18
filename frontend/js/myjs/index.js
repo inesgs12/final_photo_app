@@ -1,4 +1,4 @@
-// document.addEventListener("DOMContentLoaded", init)
+document.addEventListener("DOMContentLoaded", init)
 
 const photosUrl = "http://localhost:3000/photos/"
 const portfolio = document.querySelector("#portfolio")
@@ -108,17 +108,19 @@ function createForm(individualDiv, photo) {
     photoCommentsForm.append(inputCommentContent, formButton)
     individualDiv.append(photoCommentsForm)
 
+    photoCommentsForm.reset();
+
 }
     
 
 function addFormListener(event, individualDiv, photo){
+    // debugger
     event.preventDefault()
-
     addCommentOnServer(individualDiv, photo.id)
        .then(function(resp){
             addCommentOnDom(resp);});
 
-           photoCommentsForm.reset();
+        //    photoCommentsForm.reset();
      
 }
 
@@ -128,47 +130,54 @@ function addCommentOnServer(individualDiv, photoId){
     let commentInput = document.querySelector(`#content-${individualDiv.id}`)
     let commentValue = commentInput.value  
 
-      const options={
-          method: "POST",
-          headers:{
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({user_id: 1, photo_id: photoId, content:commentValue})
-      };
-      return fetch("http://localhost:3000/comments"
-      , options)
-               .then(resp => resp.json());
+    return fetch ("http://localhost:3000/comments", {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            user_id: 1,
+            photo_id: photoId, 
+            content: commentValue 
+        })
+    }).then(response => response.json())
+     
+    // let commentInput = document.querySelector(`#content-${individualDiv.id}`)
+    // let commentValue = commentInput.value  
+
+    //   const options={
+    //       method: "POST",
+    //       headers:{
+    //           'Accept': 'application/json',
+    //           'Content-Type': 'application/json'
+    //       },
+    //       body: JSON.stringify({user_id: photoId, photo_id: photoId, content:commentValue})
+    //   };
+    //   return fetch("http://localhost:3000/comments", options)
+    //            .then(resp => resp.json());
 
   }
 
 function addCommentOnDom(response){
   
- let commentsSection = document.querySelector(`#comments-${response.photo_id}`)
- let newComment = document.createElement('li')
- newComment.innerHTML = `${response.content}`
- let deleteBTN = document.createElement('button')
- deleteBTN.type = "button"
- deleteBTN.className = "btn"
- deleteBTN.innerHTML = `Delete`
-//  deleteBTN.addEventListener("delete", ()=>)
- newComment.append(deleteBTN)
+    let commentsSection = document.querySelector(`#comments-${response.photoId}`)
+    let newComment = document.createElement('li')
+    newComment.innerHTML = `${response.content}`
+    let deleteBTN = document.createElement('button')
+    deleteBTN.type = "button"
+    deleteBTN.className = "btn"
+    deleteBTN.innerHTML = `Delete`
+    //  deleteBTN.addEventListener("delete", ()=>)
+    newComment.append(deleteBTN)
 
 
- commentsSection.append(newComment)
+    commentsSection.append(newComment)
     
 }
-   
-
-    
-
-  
- 
-
-// function init() {
-//     fetchPhotos()
-//     addFormListener();
-// }
 
 
-fetchPhotos()
+function init() {
+    fetchPhotos()
+    addFormListener();
+}
