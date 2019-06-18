@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", init)
 
 const photosUrl = "http://localhost:3000/photos/"
+const fluidPhotoContainer = document.querySelector(".mfp-container")
+const portfolio = document.querySelector("#portfolio")
 
-const photosContainer = document.querySelector("#photo-container")
+
+// const photosContainer = document.querySelector("#photo-container")
+
 
 function fetchPhotos() {
     return fetch(photosUrl)
@@ -11,6 +15,7 @@ function fetchPhotos() {
 }
 
 function renderPhotos(photoArray) {
+    // debugger
     // photosContainer.innerHTML = ""
     photoArray.forEach(photo => {
         renderPhoto(photo)
@@ -19,52 +24,60 @@ function renderPhotos(photoArray) {
 
 function renderPhoto(photo) {
     let individualDiv = document.createElement("div")
-    individualDiv.className = "col-lg-4 col-sm-6"
-
     let photoUrlTag = document.createElement("a")
-    photoUrlTag.className = "portfolio-box"
-    photoUrlTag.href = `${photo.url}`
-    
     let imageThumbnail = document.createElement("img")
-    imageThumbnail.className = "img-fluid"
-    imageThumbnail.src = `${photo.thumbnail}`
+   
+    photoUrlTag.href = `${photo.url}`
+    imageThumbnail.src = `${photo.url}`
 
-    let captionDivBox = document.createElement("div")
-    captionDivBox.className = "portfolio-box-caption"
-
-    let photoLikeDiv = document.createElement("div")
-    photoLikeDiv.className = "project-name"
-    photoLikeDiv.innerText = "See Photo"
-
-
-    captionDivBox.append(photoLikeDiv)
-    photoUrlTag.append(captionDivBox, imageThumbnail)
+    photoUrlTag.append(imageThumbnail)
     individualDiv.append(photoUrlTag)
-    photosContainer.append(individualDiv)
+    portfolio.append(individualDiv)
 
-    imageThumbnail.addEventListener('click', function(event) {
-        event.preventDefault();
-        displayPhotoEvent(photo.id)
-    })
+    createForm(individualDiv)
+
+    // imageThumbnail.className = "img-fluid"
+    // imageThumbnail.src = `${photo.thumbnail}`
+    // individualDiv.className = "col-lg-4 col-sm-6"
+    // photoUrlTag.className = "portfolio-box"
+    // let captionDivBox = document.createElement("div")
+    // captionDivBox.className = "portfolio-box-caption"
+    // let photoLikeDiv = document.createElement("div")
+    // photoLikeDiv.className = "project-name"
+    // photoLikeDiv.innerText = "See Photo"
+
 }
 
-function displayPhotoEvent(photoId) {
-    return fetch (photosUrl + photoId) 
-        .then(response => response.json())
-        // .then(photoPage => displaySinglePhoto(photoPage))
-        // we need to create a show page. 
+function createForm(individualDiv) {
+    photoCommentsForm = document.createElement("form")
+    photoCommentsForm.id = "photo-form";
+
+    inputCommentContent = document.createElement("input");
+    inputCommentContent.id = "content"
+    inputCommentContent.placeholder = "add your comment here..."
+
+    formButton = document.createElement("button")
+    formButton.innerText = "Submit"
+
+    photoCommentsForm.append(inputCommentContent, formButton)
+    individualDiv.append(photoCommentsForm)
+
 }
 
-// function displayPhoto(photo) {
-//     //photo large 
-//     // like button 
-//     // comment form
-//     // display comments
-// }
+    
+//function event Listener submit button
 
-// function displayComments(photoId) {
+//function add comments to the server (POST)
 
+// function display(render)Comments(photoId) {
 // } 
+
+//function event listener delete button comment
+
+// function event listener edit button comment 
+
+
+//function event listener to like button 
 
 // function likePhoto(photo) {
 //     PATCH Method ... 
@@ -83,7 +96,7 @@ function init() {
 
 // Comment Code 
 
-// const photoForm = document.querySelector(".row no-gutters");
+
 
 // const addBtn = document.querySelector("#new-comment-btn");
 
