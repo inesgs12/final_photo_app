@@ -16,36 +16,64 @@ function fetchPhotos() {
 
 function renderPhotos(photoArray) {
     // debugger
-    // photosContainer.innerHTML = ""
+    portfolio.innerHTML = ""
     photoArray.forEach(photo => {
         renderPhoto(photo)
     })
 }
 
 function renderPhoto(photo) {
+    
     let individualDiv = document.createElement("div")
     let photoUrlTag = document.createElement("a")
     let imageThumbnail = document.createElement("img")
-   
+
     photoUrlTag.href = `${photo.url}`
     imageThumbnail.src = `${photo.url}`
+    
+    let likeSpan = document.createElement("span")
+    likeSpan.id = "likes"
+    
+    let likesButton = document.createElement("button")
+    likesButton.id = "like_button"
+
+    likesButton.innerText = "<3"
+    likeSpan.innerText = `${photo.like_count}`
+
+        likesButton.addEventListener('click', function(event) {
+            event.preventDefault()
+            createLike(photo, likeSpan)
+        })
+   
 
     photoUrlTag.append(imageThumbnail)
-    individualDiv.append(photoUrlTag)
+    individualDiv.append(photoUrlTag, likeSpan, likesButton)
     portfolio.append(individualDiv)
 
     createForm(individualDiv)
 
-    // imageThumbnail.className = "img-fluid"
-    // imageThumbnail.src = `${photo.thumbnail}`
-    // individualDiv.className = "col-lg-4 col-sm-6"
-    // photoUrlTag.className = "portfolio-box"
-    // let captionDivBox = document.createElement("div")
-    // captionDivBox.className = "portfolio-box-caption"
-    // let photoLikeDiv = document.createElement("div")
-    // photoLikeDiv.className = "project-name"
-    // photoLikeDiv.innerText = "See Photo"
+    //displayComments(photo.comments)
 
+
+}
+
+function createLike(photo, likeSpan) {
+    
+    console.log("create like function is being called")
+    photo.like_count++
+    likeSpan.innerText = photo.like_count
+
+    return fetch (photosUrl + photo.id, {
+        method: "PATCH",
+        headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            like_count: photo.like_count, 
+            // id: photo.id  
+        })
+    })
 }
 
 function createForm(individualDiv) {
