@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", init)
 
 const photosUrl = "http://localhost:3000/photos/"
-const fluidPhotoContainer = document.querySelector(".mfp-container")
 const portfolio = document.querySelector("#portfolio")
 
 
@@ -15,7 +14,6 @@ function fetchPhotos() {
 }
 
 function renderPhotos(photoArray) {
-    // debugger
     portfolio.innerHTML = ""
     photoArray.forEach(photo => {
         renderPhoto(photo)

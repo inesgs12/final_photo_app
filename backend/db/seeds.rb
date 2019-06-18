@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Photo.destroy_all 
-Comment.destroy_all
-User.destroy_all
+# Photo.all.destroy_all 
+# Comment.all.destroy
+# User.all.destroy_all
 
 def seed_data
     response = RestClient.get("https://api.unsplash.com/photos/?client_id=97c297ec213474ef4fea1f6200b39c5f5af601fb096f74d091a42bac0fce9472")
