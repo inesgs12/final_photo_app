@@ -16,7 +16,7 @@ function fetchPhotos() {
 
 function renderPhotos(photoArray) {
     // debugger
-    // photosContainer.innerHTML = ""
+    portfolio.innerHTML = ""
     photoArray.forEach(photo => {
         renderPhoto(photo)
     })
@@ -55,6 +55,25 @@ function renderPhoto(photo) {
     //displayComments(photo.comments)
 
 
+}
+
+function createLike(photo, likeSpan) {
+    
+    console.log("create like function is being called")
+    photo.like_count++
+    likeSpan.innerText = photo.like_count
+
+    return fetch (photosUrl + photo.id, {
+        method: "PATCH",
+        headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            like_count: photo.like_count, 
+            // id: photo.id  
+        })
+    })
 }
 
 function createForm(individualDiv) {
