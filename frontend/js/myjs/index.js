@@ -23,8 +23,12 @@ function renderPhotos(photoArray) {
 function renderPhoto(photo) {
     
     let individualDiv = document.createElement("div")
+    individualDiv.className = "container"
     let photoUrlTag = document.createElement("a")
+    // photoUrlTag.className = "align-middle"
     let imageThumbnail = document.createElement("img")
+    imageThumbnail.className = "rounded mx-auto d-block"
+    imageThumbnail.alt = "Responsive image"
 
     photoUrlTag.href = `${photo.url}`
     imageThumbnail.src = `${photo.url}`
@@ -33,17 +37,16 @@ function renderPhoto(photo) {
     likeSpan.id = "likes"
     
     let likesButton = document.createElement("button")
+    likesButton.className = "fas fa-heart fa-2x rounded mx-auto d-block my-2"
     likesButton.id = "like_button"
 
-    likesButton.innerText = "<3"
-    likeSpan.innerText = `${photo.like_count}`
+    likesButton.innerText = ` ${photo.like_count}`
 
         likesButton.addEventListener('click', function(event) {
             event.preventDefault()
-            createLike(photo, likeSpan)
+            createLike(photo, likesButton)
         })
    
-
     photoUrlTag.append(imageThumbnail)
     individualDiv.append(photoUrlTag, likeSpan, likesButton)
     portfolio.append(individualDiv)
@@ -55,11 +58,11 @@ function renderPhoto(photo) {
 
 }
 
-function createLike(photo, likeSpan) {
+function createLike(photo, likesButton) {
     
     console.log("create like function is being called")
     photo.like_count++
-    likeSpan.innerText = photo.like_count
+    likesButton.innerText = photo.like_count
 
     return fetch (photosUrl + photo.id, {
         method: "PATCH",
@@ -77,13 +80,16 @@ function createLike(photo, likeSpan) {
 function createForm(individualDiv) {
     photoCommentsForm = document.createElement("form")
     photoCommentsForm.id = "photo-form";
+    photoCommentsForm.className = "container"
 
     inputCommentContent = document.createElement("input");
     inputCommentContent.id = "content"
     inputCommentContent.placeholder = "add your comment here..."
+    inputCommentContent.className = "rounded mx-auto d-block my-1"
 
     formButton = document.createElement("button")
     formButton.innerText = "Submit"
+    formButton.className = "rounded mx-auto d-block mb-5"
 
     photoCommentsForm.append(inputCommentContent, formButton)
     individualDiv.append(photoCommentsForm)
