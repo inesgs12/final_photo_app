@@ -49,11 +49,14 @@ function renderPhoto(photo) {
 }
 
 function displayPhotoEvent(photoId) {
+    debugger
     return fetch (photosUrl + photoId) 
         .then(response => response.json())
         // .then(photoPage => displaySinglePhoto(photoPage))
         // we need to create a show page. 
 }
+
+const commentForm=document.createElementById()
 
 // function displayPhoto(photo) {
 //     //photo large 
