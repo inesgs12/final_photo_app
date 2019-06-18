@@ -1682,3 +1682,82 @@ Processing by PhotosController#index as */*
 Completed 200 OK in 37ms (Views: 32.2ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/photos/" for ::1 at 2019-06-18 13:54:07 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ines/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PhotosController#index as */*
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/controllers/photos_controller.rb:4
+Completed 200 OK in 43ms (Views: 36.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/photos/" for ::1 at 2019-06-18 13:54:23 +0100
+Processing by PhotosController#index as */*
+  [1m[36mPhoto Load (1.9ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/controllers/photos_controller.rb:4
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/photos/" for ::1 at 2019-06-18 13:56:06 +0100
+Processing by PhotosController#index as */*
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/controllers/photos_controller.rb:4
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/" for ::1 at 2019-06-18 13:56:07 +0100
+Processing by PhotosController#index as */*
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/controllers/photos_controller.rb:4
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos/" for ::1 at 2019-06-18 13:56:21 +0100
+Processing by PhotosController#index as */*
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/controllers/photos_controller.rb:4
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos/" for ::1 at 2019-06-18 15:10:29 +0100
+Processing by PhotosController#index as */*
+  [1m[36mPhoto Load (26.9ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/controllers/photos_controller.rb:4
+Completed 200 OK in 64ms (Views: 32.1ms | ActiveRecord: 26.9ms)
+
+
+Started GET "/photos/" for ::1 at 2019-06-18 15:10:45 +0100
+Processing by PhotosController#index as */*
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/controllers/photos_controller.rb:4
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos/" for ::1 at 2019-06-18 15:11:15 +0100
+Processing by PhotosController#index as */*
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/controllers/photos_controller.rb:4
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/photos/" for ::1 at 2019-06-18 15:11:26 +0100
+Processing by PhotosController#index as */*
+  [1m[36mPhoto Load (6.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/controllers/photos_controller.rb:4
+Completed 200 OK in 31ms (Views: 23.5ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/photos/" for ::1 at 2019-06-18 15:11:45 +0100
+Processing by PhotosController#index as */*
+  [1m[36mPhoto Load (1.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/controllers/photos_controller.rb:4
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/photos/" for ::1 at 2019-06-18 15:12:00 +0100
+Processing by PhotosController#index as */*
+  [1m[36mPhoto Load (1.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/controllers/photos_controller.rb:4
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 1.3ms)
+
+
