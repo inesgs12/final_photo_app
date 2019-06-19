@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", init)
 
-const photosUrl = "http://localhost:3000/photos/"
+const photosUrl = "http://localhost:3000/photos/";
+const commentsUrl = "http://localhost:3000/comments/";
 const portfolio = document.querySelector("#portfolio")
 
 
-// const photosContainer = document.querySelector("#photo-container")
+
 
 function fetchPhotos() {
     return fetch(photosUrl)
@@ -23,10 +24,10 @@ function renderPhoto(photo) {
     // debugger
     let individualDiv = document.createElement("div")
     individualDiv.className = "container"
-    // let individualDiv = document.createElement("div")
-    individualDiv.id = `photoDiv-${photo.id}`
+    individualDiv.id = `photo-main-div-${photo.id}`
+
     let photoUrlTag = document.createElement("a")
-    // photoUrlTag.className = "align-middle"
+
     let imageThumbnail = document.createElement("img")
     imageThumbnail.className = "rounded mx-auto d-block"
     imageThumbnail.alt = "Responsive image"
@@ -36,6 +37,10 @@ function renderPhoto(photo) {
     
     let likeSpan = document.createElement("span")
     likeSpan.id = "likes"
+
+    let commentUl = document.createElement("ul")
+    commentUl.id = `photo-ul-${photo.id}`
+
     
     let likesButton = document.createElement("button")
     likesButton.className = "fas fa-heart fa-2x rounded mx-auto d-block my-2"
@@ -49,19 +54,12 @@ function renderPhoto(photo) {
         })
    
     photoUrlTag.append(imageThumbnail)
-    individualDiv.append(photoUrlTag, likeSpan, likesButton)
+    individualDiv.append(photoUrlTag, likeSpan, likesButton, commentUl)
     
-    
-    let commentsUl = document.createElement("ul");
-    commentsUl.id = "comments-list"
-    commentsUl.innerHTML = `${photo.comments.map(comment =>` <li class=“comments” data-id=${comment.id} ><strong>${comment.content}</strong><button type="button" class="btn">Delete</button></li>`).join('')}` 
-    
-
-    photoUrlTag.append(imageThumbnail)
-    individualDiv.append(photoUrlTag, commentsUl)
     portfolio.append(individualDiv)
 
-    createForm(individualDiv, photo)
+    createForm(individualDiv, photo, commentUl)
+    displayComments(commentUl, photo.id, photo.comments)
 
 }
 
@@ -83,22 +81,18 @@ function createLike(photo, likesButton) {
     })
 }
 
-function createForm(individualDiv, photo) {
+function createForm(individualDiv, photo, commentUl) {
     
     photoCommentsForm = document.createElement("form")
-    photoCommentsForm.id = "photo-form";
-    photoCommentsForm.className = "container"
-    photoCommentsForm.id = `form-${individualDiv.id}`;
-    photoCommentsForm.addEventListener("submit", () => addFormListener(event, individualDiv, photo))
+    photoCommentsForm.id = `photo-form-${photo.id}`;
+    photoCommentsForm.className = "container"  
 
-    inputCommentContent = document.createElement("input");
-    inputCommentContent.id = `content-${individualDiv.id}`
+    inputCommentContent = document.createElement("input")
+    inputCommentContent.id = `comment-content-${photo.id}`
     inputCommentContent.placeholder = "add your comment here..."
     inputCommentContent.className = "rounded mx-auto d-block my-1"
 
     formButton = document.createElement("button")
-    formButton.id = "form-button"
-    formButton.id = `submit-${individualDiv.id}`
     formButton.innerText = "Submit"
     formButton.className = "rounded mx-auto d-block mb-5"
 
@@ -107,96 +101,138 @@ function createForm(individualDiv, photo) {
     individualDiv.append(photoCommentsForm)
 
     photoCommentsForm.reset();
-
+    createCommentEventListener(photo, commentUl)
 }
-    
 
-function addFormListener(event, individualDiv, photo){
+function createCommentEventListener(photo, commentUl) {
     // debugger
-    event.preventDefault()
-    addCommentOnServer(individualDiv, photo.id)
-       .then(function(resp){
-            addCommentOnDom(resp);});
+    let commentText = document.querySelector(`#comment-content-${photo.id}`)
+    
+    photoCommentsForm.addEventListener('submit', function(event) {
+        event.preventDefault()
 
-        //    photoCommentsForm.reset();
-     
+        let newComment = {
+            content: commentText.value, 
+            photo_id: photo.id,
+            user_id: photo.id
+        }
+
+        createComment(newComment)
+            .then(data => data.json())
+            .then(comment => displayComment(commentUl, photo.id, comment))
+
+        
+        event.target.reset()
+
+    })
 }
 
-
-function addCommentOnServer(individualDiv, photoId){
-
-    let commentInput = document.querySelector(`#content-${individualDiv.id}`)
-    let commentValue = commentInput.value  
-
-    return fetch ("http://localhost:3000/comments", {
+function createComment(newComment) {
+    // debugger
+    return fetch(commentsUrl, {
         method: "POST",
         headers: {
             "Accept": "application/json",
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({
-            user_id: 1,
-            photo_id: photoId, 
-            content: commentValue 
+        body: JSON.stringify(newComment)
+    })
+}
+
+function displayComments(commentUl, photoId, photoComments) {
+    photoComments.forEach(comment => {
+        displayComment(commentUl, photoId, comment)
+    })
+}
+
+function displayComment(commentUl, photoId, comment) {
+    console.log("displayComment is called when I cliks submit")
+    let commentLi = document.createElement("li")
+    let commentP = document.createElement("p")
+    let commentInputTag = document.createElement("input")
+    commentInputTag.style.display = "none"
+    commentP.style.display = "inline-block"
+
+    commentLi.id = `comment-text-${comment.id}`
+    
+    let deleteBtn = document.createElement("button")
+    deleteBtn.className = "btn-danger"
+    deleteBtn.innerText = "Delete"
+    deleteBtn.style.display = "inline-block"
+
+    deleteBtn.addEventListener('click', function(event) {
+        event.preventDefault()
+        commentLi.remove()
+        deleteComment(comment.id)
+    })
+
+    let editBtn = document.createElement("button")
+    editBtn.className = "btn-info"
+    editBtn.innerText = "Edit"
+    editBtn.style.display = "inline-block"
+
+    let saveBtn = document.createElement("button")
+    saveBtn.innerText = "Save"
+    saveBtn.style.display = "none"
+    saveBtn.className = "btn-success"
+
+    editBtn.addEventListener('click', function(event) {
+        event.preventDefault()
+        editBtn.style.display = "none"
+        saveBtn.style.display = "inline-block"
+        commentP.style.display = "none"
+        commentInputTag.style.display = "inline-block"
+        commentInputTag.value = comment.content
+        // editComment(comment, commentLi, photoId)
+    })
+
+    saveBtn.addEventListener('click', function(event) {
+        event.preventDefault()
+        saveComment(commentInputTag.value, photoId, comment.id)
+        .then(data => {
+            editBtn.style.display = "inline-block"
+            saveBtn.style.display = "none"
+            commentP.style.display = "inline-block"
+            commentInputTag.style.display = "none"
+            commentP.innerText = commentInputTag.value
         })
-    }).then(response => response.json())
-     
-    // let commentInput = document.querySelector(`#content-${individualDiv.id}`)
-    // let commentValue = commentInput.value  
+    })
 
-    //   const options={
-    //       method: "POST",
-    //       headers:{
-    //           'Accept': 'application/json',
-    //           'Content-Type': 'application/json'
-    //       },
-    //       body: JSON.stringify({user_id: photoId, photo_id: photoId, content:commentValue})
-    //   };
-    //   return fetch("http://localhost:3000/comments", options)
-    //            .then(resp => resp.json());
-
-  }
-
-function addCommentOnDom(response){
- let commentsSection = document.querySelector(`#comments-${response.photo_id}`)
- let newComment = document.createElement('li');
- newComment.innerHTML = `${response.content}`;
- let deleteBTN = document.createElement('button');
- deleteBTN.type = "button";
- deleteBTN.className = "btn";
- deleteBTN.innerHTML = `Delete`;
- deleteBTN.addEventListener("click", () => pleaseDel(event, response));
- newComment.append(deleteBTN);
- commentsSection.append(newComment)
- photoCommentsForm.reset();
- 
-}
-
-function deleteCommentOnDom(id){
     
-    const commentElement= document.getElementById(id);
-    commentElement.remove();
+    commentP.innerText = comment.content
+    // commentUl = document.querySelector(`#photo-ul-${photo.id}`)
+    commentLi.append(commentP, commentInputTag, editBtn, saveBtn, deleteBtn);
 
+    commentUl.append(commentLi)
 }
 
-function pleaseDel(event, response){
-    console.log('resp',response)
-
-    const  commentId = parseInt(event.target.parentElement.id)
-    const options={
-        method:"DELETE"
-    };
-    return fetch(`${commentUrl} ${commentId}`,options)
-             .then(function(){deleteCommentOnDom(event.target.parentElement.id)});
-
+function deleteComment(commentId) {
+    return fetch (commentsUrl + commentId, {
+        method: "DELETE"
+    })
 }
 
+function saveComment(commentValue, photoId, commentId) {
+    //Populate the form with the original input 
    
+    let currentComment = {
+        content: commentValue,
+        photo_id: photoId,
+        user_id: photoId
+    }
 
-    
+    return fetch(commentsUrl + commentId, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(currentComment)
+    })
+    .then( resp => resp.json())
+
+}
 
 
 function init() {
     fetchPhotos()
-    addFormListener();
 }

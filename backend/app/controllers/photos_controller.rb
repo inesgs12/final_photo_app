@@ -18,7 +18,7 @@ class PhotosController < ApplicationController
         @photo = Photo.new(photo_params)
         #if valid... 
         @photo.save 
-        render json: @photos 
+        render json: @photo 
     end
 
     def update 

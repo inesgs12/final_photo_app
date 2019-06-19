@@ -15,13 +15,14 @@ class CommentsController < ApplicationController
     end
 
     def create
+        # byebug
         @comment = Comment.new(comment_params)
         #if valid...bla bla 
         @comment.save
-        render json: @comments
+        render json: @comment
     end
 
-    def edit
+    def update
         @comment.update(comment_params)
         #if valid.... 
         render json: @comment
