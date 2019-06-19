@@ -7,8 +7,6 @@ const portfolio = document.querySelector("#portfolio")
 
 // const photosContainer = document.querySelector("#photo-container")
 
-
-
 function fetchPhotos() {
     return fetch(photosUrl)
         .then(response => response.json())
@@ -115,21 +113,39 @@ function addCommentOnServer(individualDiv, photo){
   }
 
 function addCommentOnDom(response){
-  
  let commentsSection = document.querySelector(`#comments-${response.photo_id}`)
- let newComment = document.createElement('li')
- newComment.innerHTML = `${response.content}`
- let deleteBTN = document.createElement('button')
- deleteBTN.type = "button"
- deleteBTN.className = "btn"
- deleteBTN.innerHTML = `Delete`
-//  deleteBTN.addEventListener("delete", ()=>)
- newComment.append(deleteBTN)
-
-
+ let newComment = document.createElement('li');
+ newComment.innerHTML = `${response.content}`;
+ let deleteBTN = document.createElement('button');
+ deleteBTN.type = "button";
+ deleteBTN.className = "btn";
+ deleteBTN.innerHTML = `Delete`;
+ deleteBTN.addEventListener("click", () => pleaseDel(event, response));
+ newComment.append(deleteBTN);
  commentsSection.append(newComment)
-    
+ photoCommentsForm.reset();
+ 
 }
+
+function deleteCommentOnDom(id){
+    
+    const commentElement= document.getElementById(id);
+    commentElement.remove();
+
+}
+
+function pleaseDel(event, response){
+    console.log('resp',response)
+
+    const  commentId = parseInt(event.target.parentElement.id)
+    const options={
+        method:"DELETE"
+    };
+    return fetch(`${commentUrl} ${commentId}`,options)
+             .then(function(){deleteCommentOnDom(event.target.parentElement.id)});
+
+}
+
    
 
     
