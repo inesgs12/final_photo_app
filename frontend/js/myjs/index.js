@@ -34,9 +34,10 @@ function renderPhoto(photo) {
 
     let commentsUl = document.createElement("ul");
     commentsUl.id = `comments-${photo.id}`
-    commentsUl.innerHTML = `${photo.comments.map(comment =>` <li class=“comments” data-id=${comment.id} ><strong>${comment.content}</strong><button type="button" class="btn">Delete</button></li>`).join('')}` 
+    debugger
+    // commentsUl.innerHTML = `${photo.comments.map(comment =>` <li class=“comments” data-id=${comment.id} ><strong>${comment.content}</strong><button type="button" class="btn">Delete</button></li>`).join('')}` 
     
-
+   
     photoUrlTag.append(imageThumbnail)
     individualDiv.append(photoUrlTag)
     individualDiv.append(commentsUl);
@@ -120,7 +121,7 @@ function addCommentOnDom(response){
  deleteBTN.type = "button";
  deleteBTN.className = "btn";
  deleteBTN.innerHTML = `Delete`;
- deleteBTN.addEventListener("click", () => pleaseDel(event, response));
+ deleteBTN.addEventListener("click", () => deleteCommentOnServer(event, response));
  newComment.append(deleteBTN);
  commentsSection.append(newComment)
  photoCommentsForm.reset();
@@ -134,14 +135,14 @@ function deleteCommentOnDom(id){
 
 }
 
-function pleaseDel(event, response){
+function deleteCommentOnServer(event, response){
     console.log('resp',response)
 
     const  commentId = parseInt(event.target.parentElement.id)
     const options={
         method:"DELETE"
     };
-    return fetch(`${commentUrl} ${commentId}`,options)
+    return fetch(`${commentsUrl} ${commentId}`,options)
              .then(function(){deleteCommentOnDom(event.target.parentElement.id)});
 
 }
