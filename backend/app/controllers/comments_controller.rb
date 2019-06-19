@@ -16,10 +16,9 @@ class CommentsController < ApplicationController
     end
 
     def create
-        @comment = Comment.new(comment_params)
-        #if valid...bla bla 
-        @comment.save
-        render json: @comments
+        
+        @comment = Comment.create(user_id: params[:user_id], photo_id: params[:photo_id], content: params[:content])
+        render json: @comment
     end
 
     def edit
