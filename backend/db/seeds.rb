@@ -11,7 +11,7 @@
 # User.all.destroy_all
 
 def seed_data
-    response = RestClient.get("https://api.unsplash.com/photos/?client_id=97c297ec213474ef4fea1f6200b39c5f5af601fb096f74d091a42bac0fce9472&page=1&per_page=30")
+    response = RestClient.get("https://api.unsplash.com/photos/?client_id=97c297ec213474ef4fea1f6200b39c5f5af601fb096f74d091a42bac0fce9472&page=2&per_page=30")
 
     
     all_photos = JSON.parse(response)
