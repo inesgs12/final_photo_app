@@ -164,6 +164,7 @@ function displayComment(commentUl, photoId, comment) {
 
     commentLi.id = `comment-text-${comment.id}`
     commentLi.className = "text-center"
+    commentP.innerText = comment.content
     
     let deleteBtn = document.createElement("button")
     deleteBtn.className = "btn-secondary btn-sm rounded"
@@ -192,7 +193,8 @@ function displayComment(commentUl, photoId, comment) {
         saveBtn.style.display = "inline-block"
         commentP.style.display = "none"
         commentInputTag.style.display = "inline-block"
-        commentInputTag.value = comment.content
+        commentInputTag.value = commentP.innerText
+        // console.log(`this is the edit event listener comment ${comment.content}`)
         // editComment(comment, commentLi, photoId)
     })
 
@@ -205,11 +207,10 @@ function displayComment(commentUl, photoId, comment) {
             commentP.style.display = "inline-block"
             commentInputTag.style.display = "none"
             commentP.innerText = commentInputTag.value
+            // console.log(`this is the save event listener comment ${commentInputTag.value}`)
         })
     })
 
-    
-    commentP.innerText = comment.content
     // commentUl = document.querySelector(`#photo-ul-${photo.id}`)
     commentLi.append(commentP, commentInputTag, editBtn, saveBtn, deleteBtn);
 
