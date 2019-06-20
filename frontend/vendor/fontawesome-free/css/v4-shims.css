@@ -215,10 +215,14 @@
 
 .fa.fa-heart-o {
   font-family: 'Font Awesome 5 Free';
-  font-weight: 400; }
+  font-weight: 400; 
+  color: salmon
+}
 
 .fa.fa-heart-o:before {
-  content: "\f004"; }
+  content: "\f004"; 
+  color: salmon
+}
 
 .fa.fa-sign-out:before {
   content: "\f2f5"; }

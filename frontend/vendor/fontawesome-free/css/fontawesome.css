@@ -2064,10 +2064,14 @@ readers do not read off random characters that represent icons */
   content: "\f590"; }
 
 .fa-heart:before {
-  content: "\f004"; }
+  content: "\f004"; 
+  color: salmon
+}
 
 .fa-heart-broken:before {
-  content: "\f7a9"; }
+  content: "\f7a9"; 
+  color: salmon
+}
 
 .fa-heartbeat:before {
   content: "\f21e"; }

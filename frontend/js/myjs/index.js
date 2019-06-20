@@ -23,7 +23,7 @@ function renderPhotos(photoArray) {
 function renderPhoto(photo) {
     // debugger
     let individualDiv = document.createElement("div")
-    individualDiv.className = "container"
+    individualDiv.className = "container text-center"
     individualDiv.id = `photo-main-div-${photo.id}`
 
     let photoUrlTag = document.createElement("a")
@@ -40,13 +40,16 @@ function renderPhoto(photo) {
 
     let commentUl = document.createElement("ul")
     commentUl.id = `photo-ul-${photo.id}`
+    commentUl.className = "text-center"
+    commentUl.style.listStyle = "none"
 
     
     let likesButton = document.createElement("button")
-    likesButton.className = "fas fa-heart fa-2x rounded mx-auto d-block my-2"
+    likesButton.className = "fas fa-heart fa-2x rounded mx-auto d-block my-2 border-0"
     likesButton.id = "like_button"
+    likesButton.style.color = "#f4623a"
 
-    likesButton.innerText = ` ${photo.like_count}`
+    likesButton.innerText = `  ${photo.like_count}`
 
         likesButton.addEventListener('click', function(event) {
             event.preventDefault()
@@ -67,7 +70,7 @@ function createLike(photo, likesButton) {
     
     console.log("create like function is being called")
     photo.like_count++
-    likesButton.innerText = photo.like_count
+    likesButton.innerText = `  ${photo.like_count}`
 
     return fetch (photosUrl + photo.id, {
         method: "PATCH",
@@ -76,7 +79,7 @@ function createLike(photo, likesButton) {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            like_count: photo.like_count, 
+            like_count: `  ${photo.like_count}`, 
         })
     })
 }
@@ -152,11 +155,13 @@ function displayComment(commentUl, photoId, comment) {
     let commentInputTag = document.createElement("input")
     commentInputTag.style.display = "none"
     commentP.style.display = "inline-block"
+    commentInputTag.className = "my-2"
 
     commentLi.id = `comment-text-${comment.id}`
+    commentLi.className = "text-center"
     
     let deleteBtn = document.createElement("button")
-    deleteBtn.className = "btn-danger"
+    deleteBtn.className = "btn-secondary btn-sm rounded"
     deleteBtn.innerText = "Delete"
     deleteBtn.style.display = "inline-block"
 
@@ -167,14 +172,14 @@ function displayComment(commentUl, photoId, comment) {
     })
 
     let editBtn = document.createElement("button")
-    editBtn.className = "btn-info"
+    editBtn.className = "btn-info btn-sm mx-1 rounded"
     editBtn.innerText = "Edit"
     editBtn.style.display = "inline-block"
 
     let saveBtn = document.createElement("button")
     saveBtn.innerText = "Save"
     saveBtn.style.display = "none"
-    saveBtn.className = "btn-success"
+    saveBtn.className = "btn-success btn-sm rounded mx-1"
 
     editBtn.addEventListener('click', function(event) {
         event.preventDefault()
