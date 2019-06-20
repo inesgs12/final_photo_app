@@ -92,8 +92,8 @@ function createForm(individualDiv, photo, commentUl) {
 
     inputCommentContent = document.createElement("input")
     inputCommentContent.id = `comment-content-${photo.id}`
-    inputCommentContent.placeholder = "add your comment here..."
-    inputCommentContent.className = "rounded mx-auto d-block my-1"
+    inputCommentContent.placeholder = "add your comment..."
+    inputCommentContent.className = "rounded mx-auto d-block my-1 input-group-text"
 
     formButton = document.createElement("button")
     formButton.innerText = "Submit"
@@ -133,7 +133,7 @@ function createCommentEventListener(photo, commentUl) {
 function createComment(newComment) {
     
     if (newComment.content.length < 1){
-        alert("please enter your comment!")
+        alert("Please enter your comment!")
     }
     else {
     return fetch(commentsUrl, {
@@ -231,7 +231,7 @@ function saveComment(commentValue, photoId, commentId) {
         user_id: photoId
     }
     if (commentValue.length < 1){
-        alert("please enter your comment!")
+        alert("Please enter your comment!")
     }
     else {
     return fetch(commentsUrl + commentId, {
