@@ -30,10 +30,10 @@ end
 
 seed_data
 
-10.times do 
+20.times do 
     User.create(username: Faker::Name.name)
 end
 
-10.times do
+20.times do
     Comment.create(content: Faker::Lorem.sentence(3), photo_id:Photo.all.sample.id, user_id:User.all.sample.id)
 end

@@ -51,7 +51,7 @@ function renderPhoto(photo) {
 
     likesButton.innerText = `  ${photo.like_count}`
 
-        likesButton.addEventListener('click', function(event) {
+        likesButton.addEventListener('click', (event) => {
             event.preventDefault()
             createLike(photo, likesButton)
         })
@@ -108,10 +108,9 @@ function createForm(individualDiv, photo, commentUl) {
 }
 
 function createCommentEventListener(photo, commentUl) {
-    // debugger
     let commentText = document.querySelector(`#comment-content-${photo.id}`)
     
-    photoCommentsForm.addEventListener('submit', function(event) {
+    photoCommentsForm.addEventListener('submit', (event) => {
         event.preventDefault()
 
         let newComment = {
@@ -124,14 +123,14 @@ function createCommentEventListener(photo, commentUl) {
             .then(data => data.json())
             .then(comment => displayComment(commentUl, photo.id, comment))
 
-        
+        console.log(commentText.value)
         event.target.reset()
-
+        
     })
 }
 
 function createComment(newComment) {
-    
+
     if (newComment.content.length < 1){
         alert("Please enter your comment!")
     }
@@ -171,7 +170,7 @@ function displayComment(commentUl, photoId, comment) {
     deleteBtn.innerText = "Delete"
     deleteBtn.style.display = "inline-block"
 
-    deleteBtn.addEventListener('click', function(event) {
+    deleteBtn.addEventListener('click', (event) => {
         event.preventDefault()
         commentLi.remove()
         deleteComment(comment.id)
@@ -187,7 +186,7 @@ function displayComment(commentUl, photoId, comment) {
     saveBtn.style.display = "none"
     saveBtn.className = "btn-success btn-sm rounded mx-1"
 
-    editBtn.addEventListener('click', function(event) {
+    editBtn.addEventListener('click', (event) => {
         event.preventDefault()
         editBtn.style.display = "none"
         saveBtn.style.display = "inline-block"
@@ -198,7 +197,7 @@ function displayComment(commentUl, photoId, comment) {
         // editComment(comment, commentLi, photoId)
     })
 
-    saveBtn.addEventListener('click', function(event) {
+    saveBtn.addEventListener('click', (event) => {
         event.preventDefault()
         saveComment(commentInputTag.value, photoId, comment.id)
         .then(data => {
