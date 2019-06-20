@@ -128,7 +128,11 @@ function createCommentEventListener(photo, commentUl) {
 }
 
 function createComment(newComment) {
-    // debugger
+    
+    if (newComment.content.length < 1){
+        alert("please enter your comment!")
+    }
+    else {
     return fetch(commentsUrl, {
         method: "POST",
         headers: {
@@ -137,6 +141,7 @@ function createComment(newComment) {
         },
         body: JSON.stringify(newComment)
     })
+    }
 }
 
 function displayComments(commentUl, photoId, photoComments) {
@@ -220,7 +225,10 @@ function saveComment(commentValue, photoId, commentId) {
         photo_id: photoId,
         user_id: photoId
     }
-
+    if (commentValue.length < 1){
+        alert("please enter your comment!")
+    }
+    else {
     return fetch(commentsUrl + commentId, {
         method: "PATCH",
         headers: {
@@ -229,7 +237,7 @@ function saveComment(commentValue, photoId, commentId) {
         body: JSON.stringify(currentComment)
     })
     .then( resp => resp.json())
-
+    }
 }
 
 
